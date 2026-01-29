@@ -1,0 +1,14 @@
+{% extends 'logs/base.html' %}
+{% block content %}
+
+<ul>
+{% for entry in entries %}
+<li>
+<p>{{ entry.text|linebreaks }}</p>
+</li>
+{% empty %}
+<li>Empty</li>
+{% endfor %}
+</ul>
+
+{% endblock content %}

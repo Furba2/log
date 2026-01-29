@@ -1,0 +1,14 @@
+{% extends 'logs/base.html' %}
+
+{% block page_header %}
+<div class="jumbotron">
+    <h1 class="display-3">Solution Nepal</h1>
+
+    <p class="lead">Welcome to Solution Nepal, your trusted place for 
+    clear, accurate & easy guide for textbooks.</p>
+
+    <a class="btn btn-lg btn-primary" href="{% url 'logs:topics'%}"
+    role="button">Books</a>
+</div>
+
+{% endblock page_header %}
